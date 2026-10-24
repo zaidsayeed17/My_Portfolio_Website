@@ -12,7 +12,7 @@ Before deploying to production, review the following fields in `src/data/siteCon
 |---|---|---|
 | `siteUrl` | `""` | Set to your live production domain (e.g. `https://zaidsayeed.vercel.app` or custom domain). When filled, enables canonical tags and absolute social preview URLs. |
 | `email` | `"zaidsayeed17@gmail.com"` | Primary contact email address. |
-| `phone` | `"9284419270"` | Contact phone number. |
+| `phone` | `""` | Contact phone number. |
 | `showPhone` | `false` | Must stay `false` to keep phone number private. Set to `true` only if you wish to display it publicly. |
 | `resumeUrl` | `""` | Direct link to your hosted PDF resume (e.g. Google Drive / GitHub release / `/resume.pdf`). Leave empty until ready. |
 | `github` | `"https://github.com/zaidsayeed17"` | Your GitHub profile URL. |
