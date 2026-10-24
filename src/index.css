@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-terracotta text-cream;
+  }
+
+  /* Anchored sections scroll offset so sticky header doesn't cover heading */
+  section {
+    scroll-margin-top: 88px;
+  }
+}
+
+/* Custom scrollbar matching espresso / terracotta aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B1D17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A2820;
+  border-radius: 5px;
+  border: 2px solid #2B1D17;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C65D2E;
+}
